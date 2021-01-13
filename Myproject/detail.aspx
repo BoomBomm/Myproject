@@ -7,7 +7,7 @@
         <asp:Repeater ID="rptrProductDetails" runat="server">
             <ItemTemplate>
                 <div class="col-sm-12">
-                    <img  style="width:80%;height:80%"  src="images/<%#DataBinder.Eval(Container.DataItem,"image") %>" alt="image" />
+                    <img  style="width:50%;height:50%"  src="images/ProductImages/0<%#DataBinder.Eval(Container.DataItem,"fid")%>/<%#DataBinder.Eval(Container.DataItem,"image") %>" alt="image" />
                     <div class="caption">
                         <div class="">标题 <%#DataBinder.Eval(Container.DataItem,"subject") %></div>
                         <p><%#DataBinder.Eval(Container.DataItem,"contant") %></p>

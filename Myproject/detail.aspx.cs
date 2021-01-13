@@ -35,7 +35,7 @@ public partial class detail : System.Web.UI.Page
         String CS = ConfigurationManager.ConnectionStrings["cartoon111ConnectionString1"].ConnectionString;
         using (SqlConnection con = new SqlConnection(CS))
         {
-            using (SqlCommand cmd = new SqlCommand("select image,subject,contant,views,addtime from T_post where tid=" + tid + "", con))
+            using (SqlCommand cmd = new SqlCommand("select * from T_post where tid=" + tid + "", con))
             {
                 cmd.CommandType = CommandType.Text;
                 using (SqlDataAdapter sda = new SqlDataAdapter(cmd))
