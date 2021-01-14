@@ -9,6 +9,7 @@ public partial class _Default : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        //验证是否登录
         if (Session["USERNAME"] != null)
         {
             btnSignup.Visible = false;
@@ -27,7 +28,11 @@ public partial class _Default : System.Web.UI.Page
 
         }
     }
-
+    /// <summary>
+    /// 退出登录
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     protected void btnSignOut_Click(object sender, EventArgs e)
     {
         Session["USERNAME"] = null;

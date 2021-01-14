@@ -17,7 +17,9 @@ public partial class Products : System.Web.UI.Page
             BindProductRepeater();
         }
     }
-
+    /// <summary>
+    /// 绑定数据
+    /// </summary>
     private void BindProductRepeater()
     {
         Int64 fid = Convert.ToInt64(Request.QueryString["fid"]);

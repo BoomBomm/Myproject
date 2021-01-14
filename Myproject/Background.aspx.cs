@@ -131,6 +131,11 @@ public partial class Background : System.Web.UI.Page
             this.DownPage.Style["color"] = "#23527c";
         }
     }
+    /// <summary>
+    /// 改变审核状态
+    /// </summary>
+    /// <param name="ChangeID"></param>
+    /// <param name="CheckState"></param>
     protected void ChangeCheckState(int ChangeID, string CheckState)
     {
         if (CheckState == "1")
@@ -142,7 +147,11 @@ public partial class Background : System.Web.UI.Page
             operation.UpdateInfo(ChangeID, false);
         }
     }
-
+    /// <summary>
+    /// 退出管理员登录
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     protected void btnSignOut_Click(object sender, EventArgs e)
     {
         Session["ROOTNAME"] = null;

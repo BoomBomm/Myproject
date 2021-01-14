@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="Server">
     <div class="container">
         <div class="form-horizontal">
-            <h2>Add Product</h2>
+            <h2>发布帖子</h2>
             <hr />
             <div class="form-group">
                 <asp:Label ID="Label1" runat="server" CssClass="col-md-2 control-label" Text="标题"></asp:Label>

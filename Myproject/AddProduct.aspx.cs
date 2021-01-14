@@ -26,11 +26,6 @@ public partial class AddProduct : System.Web.UI.Page
         //类型选择栏的绑定
         using (DataTable dt = operation.SelectType("select * from T_type"))
         {
-            //SqlCommand cmd = new SqlCommand("select * from T_type", con);
-            //con.Open();
-            //SqlDataAdapter sda = new SqlDataAdapter(cmd);
-            //DataTable dt = new DataTable();
-            //sda.Fill(dt);
 
             if (dt.Rows.Count != 0)
             {

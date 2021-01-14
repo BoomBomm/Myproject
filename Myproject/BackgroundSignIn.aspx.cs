@@ -18,14 +18,8 @@ public partial class BackgroundSignIn : System.Web.UI.Page
     protected void Button1_Click(object sender, EventArgs e)
     {
 
-        //String CS = ConfigurationManager.ConnectionStrings["cartoon111ConnectionString1"].ConnectionString;
         using (DataTable dt = operation.SelectSignIn("select * from T_power where name='" + UserName.Text + "' and pwd='" + Password.Text + "'"))
         {
-            //SqlCommand cmd = new SqlCommand("select * from T_power where name='" + UserName.Text + "' and pwd='" + Password.Text + "'", con);
-            //con.Open();
-            //SqlDataAdapter sda = new SqlDataAdapter(cmd);
-            //DataTable dt = new DataTable();
-            //sda.Fill(dt);
 
             if (dt.Rows.Count != 0)
             {

@@ -34,7 +34,11 @@ public partial class Eliteposts : System.Web.UI.Page
             bindElite();
         }
     }
-
+    /// <summary>
+    /// 退出登录
+    /// </summary>
+    /// <param name="sender"></param>
+    /// <param name="e"></param>
     protected void btnSignOut_Click(object sender, EventArgs e)
     {
         Session["USERNAME"] = null;
@@ -42,7 +46,9 @@ public partial class Eliteposts : System.Web.UI.Page
         Label1.Text = "未登录";
         Response.Redirect("~/Default.aspx");
     }
-
+    /// <summary>
+    /// 页面数据绑定
+    /// </summary>
     private void bindElite()
     {
         String CS = ConfigurationManager.ConnectionStrings["cartoon111ConnectionString1"].ConnectionString;
