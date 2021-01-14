@@ -42,9 +42,8 @@ public partial class Background : System.Web.UI.Page
         }
     }
     /// <summary>
-    /// 绑定供求信息到GridViev控件
+    /// 绑定信息到GridViev控件
     /// </summary>
-    /// <param name="type">供求信息类别</param>
     public void DataBind(int PageIndex)
     {
         int PageSize = 10;

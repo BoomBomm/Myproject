@@ -21,12 +21,11 @@ public class Operation
         //
     }
     DataBase data = new DataBase();
-    #region  查询供求信息
+    #region  查询
 
     /// <summary>
-    /// 按类型进行分页查询供求信息
+    /// 进行分页查询
     /// </summary>
-    /// <param name="type">供求信息类型</param>
     /// <param name="PageIndex">页面索引序号</param>
     /// <param name=" PageSize">每一页显示的记录数量</param>
     /// <param name="StartIndex">每一页显示的记录的起始索引序号</param>
@@ -54,9 +53,9 @@ public class Operation
             "where tid="+id,"T_post");
     }
     #endregion
-    #region  修改供求信息 
+    #region  修改信息 
     /// <summary>
-    /// 修改供求信息的审核状态
+    /// 修改审核状态
     /// </summary>
     /// <param name="id">信息ID</param>
     /// <param name="state">原来的信息状态</param>
